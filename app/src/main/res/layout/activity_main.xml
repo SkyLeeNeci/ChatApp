@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/massageListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/message_item" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massageListView">
+
+        <ImageButton
+            android:id="@+id/sendPhotoButton"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_image_24">
+
+        </ImageButton>
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/message_corner_radius"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:padding="6dp"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/sendMessageButton"
+            android:layout_width="29dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:background="@drawable/ic_baseline_send_24"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="79dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/massageListView"
+        app:layout_constraintEnd_toEndOf="@+id/massageListView"
+        app:layout_constraintStart_toStartOf="@+id/massageListView"
+        app:layout_constraintTop_toTopOf="@+id/massageListView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

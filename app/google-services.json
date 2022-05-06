@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1009392210367",
+    "project_id": "chatapp-30473",
+    "storage_bucket": "chatapp-30473.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009392210367:android:42fc4f39e7ffe1bfa3110a",
+        "android_client_info": {
+          "package_name": "karpenko.diploma.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009392210367-5kou55uujng58g80b25l54lhqkbr7b6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karpenko.diploma.chatapp",
+            "certificate_hash": "5f333c96b18b77907a82a4f826d8f11c6af4324a"
+          }
+        },
+        {
+          "client_id": "1009392210367-qfnso5ildrgdl2qavb0slehf0rce9orr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKq4eTmaa1jk0ToZ4MLNn-enUuEcQw784"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009392210367-qfnso5ildrgdl2qavb0slehf0rce9orr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
