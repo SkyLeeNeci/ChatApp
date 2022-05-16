@@ -1,18 +1,23 @@
 package karpenko.diploma.chatapp;
 
 public class AwesomeMessage {
-    String text;
-    String name;
-    String imageUri;
+    private String text;
+    private String name;
+    private String sender;
+    private String recipient;
+    private String imageUri;
+    private boolean isMine;
 
     public AwesomeMessage(){
-
     }
 
-    public AwesomeMessage(String text, String name, String imageUri) {
+    public AwesomeMessage(String text, String name, String sender, String recipient, String imageUri, boolean isMine) {
         this.text = text;
         this.name = name;
+        this.sender = sender;
+        this.recipient = recipient;
         this.imageUri = imageUri;
+        this.isMine = isMine;
     }
 
     public String getText() {
@@ -37,5 +42,29 @@ public class AwesomeMessage {
 
     public void setImageUri(String imageUri) {
         this.imageUri = imageUri;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
+    public String getRecipient() {
+        return recipient;
+    }
+
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
+    }
+
+    public boolean isMine() {
+        return isMine;
+    }
+
+    public void setMine(boolean mine) {
+        isMine = mine;
     }
 }
